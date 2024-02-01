@@ -55,7 +55,7 @@ input_b = tf.keras.layers.Input(shape=(10,), name='input_b')
 # Adding custom layers
 add_result = CustomAddLayer(name='custom_add')([input_a, input_b])
 multiply_result = CustomMultiplyLayer(name='custom_multiply')([input_a, input_b])
-
+##
 # Creating models
 add_model = tf.keras.Model(inputs=[input_a, input_b], outputs=add_result, name='addition_model')
 multiply_model = tf.keras.Model(inputs=[input_a, input_b], outputs=multiply_result, name='multiplication_model')
